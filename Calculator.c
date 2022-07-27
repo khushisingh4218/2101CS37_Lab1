@@ -59,3 +59,9 @@ void subtract(float m, float n)
 {
     printf("calculating a-b:\n%f - %f = %f", m, n, m - n);
 }
+
+// multiplication function
+void multiply(float m, float n)
+{
+    printf("calculating a*b:\n%f * %f = %f", m, n, m * n);
+}
