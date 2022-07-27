@@ -47,3 +47,9 @@ int main()
     }
     return 0;
 }
+
+// addition function
+void add(float m, float n)
+{
+    printf("calculating a+b:\n%f + %f = %f", m, n, m + n);
+}
