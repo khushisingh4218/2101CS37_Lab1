@@ -65,3 +65,9 @@ void multiply(float m, float n)
 {
     printf("calculating a*b:\n%f * %f = %f", m, n, m * n);
 }
+
+// division function
+void divide(float m, float n)
+{
+    printf("calculating a/b:\n%f / %f = %f", m, n, m / n);
+}
