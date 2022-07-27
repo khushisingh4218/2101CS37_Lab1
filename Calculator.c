@@ -53,3 +53,9 @@ void add(float m, float n)
 {
     printf("calculating a+b:\n%f + %f = %f", m, n, m + n);
 }
+
+// subtraction function
+void subtract(float m, float n)
+{
+    printf("calculating a-b:\n%f - %f = %f", m, n, m - n);
+}
