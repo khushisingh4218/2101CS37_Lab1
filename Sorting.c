@@ -167,3 +167,54 @@ void quickSort(int arr[], int first, int last)
         quickSort(arr, j + 1, last);
     }
 }
+int main()
+{
+    int size;
+    // inputting the elements of array
+    printf("Enter the size of array:\n");
+    scanf("%d", &size);
+    int arr[size];
+    printf("Enter the elements of array:\n");
+    for (int i = 0; i < size; i++)
+    {
+        scanf("%d", &arr[i]);
+    }
+    int choice;
+    printf("Sorting algorithms:\n1.Insertion Sort\n2.Selection Sort\n3.Bubble Sort\n4.Merge Sort\n5.Quick Sort\n");
+    printf("Input the sorting algorithm(1/2/3/4/5):\n");
+    scanf("%d", &choice);
+    // inputting choice of sorting algorithm
+    switch (choice)
+    {
+    case 1:
+        insertionSort(arr, size);
+        break;
+
+    case 2:
+        selectionSort(arr, size);
+        break;
+
+    case 3:
+        bubbleSort(arr, size);
+        break;
+
+    case 4:
+        mergeSort(arr, 0, size - 1);
+        break;
+
+    case 5:
+        quickSort(arr, 0, size - 1);
+        break;
+
+    default:
+        printf("Invalid choice!");
+        break;
+    }
+    // array is sorted for a valid choice of algorithm
+    printf("Array after sorting:\n");
+    for (int i = 0; i < size; i++)
+    {
+        printf("%d ", arr[i]);
+    }
+    return 0;
+}
